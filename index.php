@@ -17,25 +17,12 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#"><span>My</span>Portfolio</a></div>
-            <ul class="menu">
-                <li><a href="./index.php" class="menuBtn">Home</a></li>
-                <li><a href="#about" class="menuBtn">About</a></li>
-                <li><a href="#services" class="menuBtn">Services</a></li>
-                <li><a href="#skills" class="menuBtn">Skills</a></li>
-                <li><a href="#team" class="menuBtn">Team</a></li>
-                <li><a href="#projects" class="menuBtn">Projects</a></li>
-                <li><a href="./contact.php" class="menuBtn">Contact</a></li>
-            </ul>
-            <div class="menuBtn">
-                <i class="fas fa-bars" id="menu-btn"></i>
-            </div>
-        </div>
-    </nav>
+    <?php
+        include "./components/NavBar.component.php";
+        echo NavBar();
+    ?> 
     <!-- Home -->
-    <!-- <section class="home" id="home">
+    <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-hello">Hello, my name is</div>
@@ -44,25 +31,10 @@
                 <a href="#">Hire me</a>
             </div>
         </div>
-    </section> -->
-    <!-- About Us -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-              <div class="column left">
-                  <img src="assets/images/AboutMihai.svg" alt="Mihai">
-              </div>
-              <div class="column right">
-                <div class="text">I'm Smoleac Mihai and I am a <span class="whoIAm"></span></div>
-                <p>I'm a young man from a country called Moldova. From young ages I was interested in electronics, well mostly games, but then I learned about how do you make games, I was astonished from how it all works. I was obsessed with the idea to make a game myself. To code something that others will want to use themselves and enjoy it just like I did.</p>
-                <a href="assets/forDownload/cv.docx" download="cv">Download CV</a>
-              </div>
-            </div>
-        </div>
     </section>
+    
     <!-- Services -->
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My services</h2>
             <div class="serv-content">
@@ -90,7 +62,6 @@
             </div>
         </div>
     </section>
-    <!-- skills section -->
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">My skills</h2>
@@ -147,18 +118,17 @@
             </div>
         </div>
     </section>
-    <!-- Team section -->
     <section class="team" id="team">
         <div class="max-width">
             <h2 class="title">My Team</h2>
             <div class="carousel owl-carousel">
-                 <!-- <div class="card">
+                  <div class="card">
                     <div class="box">
                          <img src="assets/images/profile-1.png" alt="Ilona">
                          <div class="text">Frasiniuc Ilona</div>
                          <p>A proffesional fullstack developer that gets everything done.</p>
                     </div>
-                 </div> -->
+                 </div> 
                  <div class="card">
                     <div class="box">
                          <img src="assets/images/profile-2.jpg" alt="Me">
@@ -273,10 +243,10 @@
             </div>
         </div>
     </section>
-    <!-- footer -->
+   
     <footer>
         <span>Created By Smoleac Mihai | <span class="far fa-copyright"></span>2022 All rights reserved.</span>
-    </footer>
+    </footer> -->
 <script src="assets/js/script.js"></script>
 </body>
 </html>

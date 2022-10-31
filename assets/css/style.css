@@ -12,6 +12,7 @@ html{
 
 body{
     background-color: #FBFBFB;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .black{
@@ -242,6 +243,12 @@ section .title::after{
 }
 
 /* AboutUs */
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
 .about .title::after{
     content: "who I am";
@@ -704,9 +711,27 @@ section .title::after{
 
 /* Gallery page */
 
+.card {
+    margin-left: 10px;
+    text-align: center;
+}
+
 .cardImg {
     width: 200px;
     height: 200px;
+    border-radius: 10px;
+}
+
+.cardTitle {
+    padding: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 30px;
+    row-gap: 15px;
+    column-gap: 15px;
 }
 
 
