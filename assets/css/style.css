@@ -773,6 +773,10 @@ footer{
 
 @media(max-width:947px){
 
+    .about > a {
+        text-align: center;
+    }
+
     .menuBtn{
         display: block;
         z-index: 999;
